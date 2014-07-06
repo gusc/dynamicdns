@@ -80,8 +80,8 @@ and probably check your log files if everything went on smoothly.
 Create a virtual host in your favourite HTTP server and install all the server side scripts into your desired virtual host.
 Update your configuration files accordingly:
 
-	* copy the config.inc.php.sample to confing.inc.php and edit it's contents
-	* copy the clients.inc.php.sample to clients.inc.php and add your clients
+* copy the config.inc.php.sample to confing.inc.php and edit it's contents
+* copy the clients.inc.php.sample to clients.inc.php and add your clients
 	
 Test your updates through provided update form.
 
@@ -90,7 +90,7 @@ Test your updates through provided update form.
 Place your files somewhere on your client server/computer.
 Update your configuration files accordingly:
 
-	* copy the config.inc.php.sample to config.inc.php
+* copy the config.inc.php.sample to config.inc.php
 
 Test your updates by launching the client:
 
