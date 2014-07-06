@@ -1,12 +1,12 @@
-h1. Requirements
+# Requirements
 
 1. BIND DNS server daemon
 2. Some HTTP web server
 3. PHP
 
-h1. Server side installation
+# Server side installation
 
-h2. Create DNSSec key
+## Create DNSSec key
 
 Log into your server as a root and generate a new key for your DNS updater:
 
@@ -27,9 +27,10 @@ this will output something like this:
 dyndns.example.com. IN KEY 512 3 165 bwfb5O8+1VUiV3un66ucV1c9yAyT5Hdzs1gUHpcWWZrFEihtLlKl1E4E wFsTNbWg+EvK/ddOq7wWmZ9GYaPYbw==
 ```
 
-Copy the Base64 part from the key file (the one that looks like: *bwfb5O8+1VUiV3un66ucV1c9yAyT5Hdzs1gUHpcWWZrFEihtLlKl1E4E wFsTNbWg+EvK/ddOq7wWmZ9GYaPYbw==*)
+Copy the Base64 part from the key file (the one that looks like: **bwfb5O8+1VUiV3un66ucV1c9yAyT5Hdzs1gUHpcWWZrFEihtLlKl1E4E wFsTNbWg+EvK/ddOq7wWmZ9GYaPYbw==**)
+The space in the key is OK, don't worry.
 
-h2. Create zone configuration
+## Create zone configuration
 
 Open up named.conf in your favourite text editor and add your zone configurations:
 
@@ -46,7 +47,7 @@ zone "dyndns.example.com" {
 };
 ```
 
-h2. Create zone file
+## Create zone file
 
 Now create a zone file and update accordingly (add your NS and primary A records, update SOA record):
 
@@ -74,7 +75,7 @@ rndc reload
 
 and probably check your log files if everything went on smoothly.
 
-h2. Create a webservice
+## Create a webservice
 
 Create a virtual host in your favourite HTTP server and install all the server side scripts into your desired virtual host.
 Update your configuration files accordingly:
@@ -84,7 +85,7 @@ Update your configuration files accordingly:
 	
 Test your updates through provided update form.
 
-h1. Client side installation
+# Client side installation
 
 Place your files somewhere on your client server/computer.
 Update your configuration files accordingly:
