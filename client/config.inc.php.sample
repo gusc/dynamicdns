@@ -1,0 +1,15 @@
+<?php
+/**
+* DynamicDNS client side configuration
+* 
+* @author Gusts 'gusC' Kaksis <gusts.kaksis@gmail.com>
+*/
+
+// Your username
+$USER = 'usename1';
+// Your password
+$HASH = 'md5 hash';
+// Your hostname(-s)
+$HOSTS = array('host1', 'host2');
+// DynamicDNS server URL
+$DYNDNS_URL = 'http://dyndns.example.com/';

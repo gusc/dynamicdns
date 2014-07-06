@@ -1,0 +1,4 @@
+#
+# Cron file for DynamicDNS client script
+#
+0 * * * * /usr/bin/php -q /path/to/your/updater.php

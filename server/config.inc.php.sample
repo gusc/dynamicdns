@@ -1,0 +1,13 @@
+<?php
+/**
+* DynamicDNS server side configuration
+* 
+* @author Gusts 'gusC' Kaksis <gusts.kaksis@gmail.com>
+*/
+
+// Path to NSUpdate
+$NSUPDATE = '/usr/bin/nsupdate';
+// Path to DNS updater key file
+$NSKEYFILE = $PATH.'/dyndns.example.com.key';
+// Domain zone name
+$ZONE = 'dyndns.example.com';

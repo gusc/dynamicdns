@@ -1,0 +1,17 @@
+<?php
+/**
+* DynamicDNS client database
+* 
+* 	username =>
+* 		passrow => password hash
+* 		hosts => an array of allowed host names without zone
+* 
+* @author Gusts 'gusC' Kaksis <gusts.kaksis@gmail.com>
+*/
+
+$clients = array(
+  'username1' => array(
+    'password' => 'md5 hash',
+    'hosts' => array('host1', 'host2')
+	)
+);
